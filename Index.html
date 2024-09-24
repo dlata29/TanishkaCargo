@@ -1,0 +1,702 @@
+<!-- hosted on github pages, same as cargo.html. here Images are referenced firectly-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- internal css-->
+    <link rel="stylesheet" href="cargo.css" />
+    <!-- bootstrap links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--css links end-->
+    <title>Tanishka Cargo</title>
+    <!-- scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  </head>
+  <body>
+    <div class="header" id="topheader">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container p-2">
+          <a class="navbar-brand siteName" href="#">Tanishka Cargo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto text-uppercase">
+              <li class="nav-item">
+                <a
+                  class="nav-link siteNavItem active"
+                  aria-current="page"
+                  href="#servicediv"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourServices">Our Servies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactID">Contact US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#happyclients">Clients</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-----------navigational header ends here --------->
+      <section class="header-section">
+        <div class="center-div">
+          <h1 class="font-weight-bold">Welcome to Tanishka Cargo Ltd.</h1>
+          <p>
+            <span style="font-weight: 300"> SHIP ANYTHING</span><br />
+            <span style="font-weight: 700; font-size: 2.5rem !important"
+              >AROUND THE GLOBE</span
+            >
+          </p>
+
+          <div class="header-buttons">
+            <a href="#servicediv">About us</a>
+            <a href="#contactID">Contact us</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- header servcies- start- services we offer -->
+    <section class="header-services" id="ourServices">
+      <div class="container text-center">
+        <h1>Our Services</h1>
+        <p>Comprehensive Project Cargo Solutions Tailored to Your Needs</p>
+
+        <div class="row justify-content-center">
+          <!-- Road Transport -->
+          <div class="col-lg-6 col-md-6 col-12 mb-3">
+            <div
+              class="ourServices p-3 shadow-sm rounded"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="extra-div text-center">
+                <i class="fas fa-2x fa-shipping-fast mb-2"></i>
+                <h2>Road Transport</h2>
+                <p>Specialized in over-dimensional and heavy cargo.</p>
+                <div class="accordion-toggle">
+                  <i class="fas fa-chevron-down"></i><br />
+                  <!-- <span class="ServicesKnowMore">Click to know more</span> -->
+                </div>
+                <div class="accordion-content">
+                  <ul class="feature-list">
+                    <li>Best Trucks Available</li>
+                    <li>Timely Delivery</li>
+                    <li>Experienced Drivers</li>
+                    <li>Transparent Pricing</li>
+                    <li>Our Owned Trailer Fleet</li>
+                  </ul>
+                  <div class="fleet-details">
+                    <h3>Fleet Details</h3>
+                    <p>
+                      <strong>Sizes:</strong> 20 Ft (4), 40 Ft (6), Canter (1)
+                    </p>
+                    <p>
+                      <strong>Weight Capacity:</strong> 9 Ton, 16 Ton, 20 Ton,
+                      22 Ton, 26 Ton
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Air Freight -->
+          <div class="col-lg-6 col-md-6 col-12 mb-3">
+            <div
+              class="ourServices p-3 shadow-sm rounded"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="extra-div text-center">
+                <i class="fas feta-2x fa-plane mb-2"></i>
+                <h2>Air Transport</h2>
+                <p>Fast and reliable air transport for critical cargo.</p>
+                <div class="accordion-toggle">
+                  <i class="fas fa-chevron-down"></i><br />
+                </div>
+                <div class="accordion-content">
+                  <ul class="styled-list">
+                    <li>
+                      Import / Export: Individual and consolidated shipments
+                    </li>
+                    <li>Aircraft Chartering</li>
+                    <li>Combined Transport (Sea / Air)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sea Freight (1) -->
+          <div class="col-lg-6 col-md-6 col-12 mb-3">
+            <div
+              class="ourServices p-3 shadow-sm rounded"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="extra-div text-center">
+                <i class="fas fa-2x fa-ship mb-2"></i>
+                <h2>Marine Transport</h2>
+                <p>Efficient and cost-effective sea transportation.</p>
+                <div class="accordion-toggle">
+                  <i class="fas fa-chevron-down"></i><br />
+                </div>
+                <div class="accordion-content">
+                  <ul class="styled-list">
+                    <li>Full Container Load Shipments (FCL / FCL)</li>
+                    <li>Less than Container Load Shipments (LCL / LCL)</li>
+                    <li>Project Cargoes (Break-Bulk Cargoes)</li>
+                    <li>Intermodal and Multimodal Transport</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sea Freight (2) -->
+          <div class="col-lg-6 col-md-6 col-12 mb-3">
+            <div
+              class="ourServices p-3 shadow-sm rounded"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="extra-div text-center">
+                <i class="fas fa-2x fa-ship mb-2"></i>
+                <h2>Custom House Agent</h2>
+                <p>Efficient and cost-effective sea transportation.</p>
+                <div class="accordion-toggle">
+                  <i class="fas fa-chevron-down"></i><br />
+                </div>
+                <div class="accordion-content">
+                  <ul class="styled-list">
+                    <li>
+                      Locations at CFS, Patparganj, and Indira Gandhi
+                      International Airport.
+                    </li>
+                    <li>
+                      Services: Freight Forwarding, Transportation, and Customs
+                      Clearance.
+                    </li>
+                    <li>High-quality infrastructure and a dedicated team.</li>
+                    <li>
+                      Connected offices in India and abroad for smooth
+                      operations.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- header servcies- start- services we offer ends here -->
+    <!--about us-->
+
+    <section class="serviceoffers" id="servicediv">
+      <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">About Us</h1>
+        <p class="text-center">All over India - Hassle-free service</p>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="Images/truck.png"
+              alt="Trucks on Parking"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="about-us">
+              <p>
+                We offer comprehensive logistics solutions across India. Our
+                expertise in handling complex cargo and providing hassle-free
+                services has made us a trusted partner for businesses
+                nationwide. Our fleet of modern vehicles and dedicated team
+                ensure timely and safe delivery of your goods.
+              </p>
+              <p>
+                Our commitment to excellence and customer satisfaction sets us
+                apart. Whether you need road transport, air freight, or sea
+                freight, we have the resources and expertise to meet your needs.
+              </p>
+            </div>
+
+            <div class="dvTrailer">
+              <h5 class="trailer-title">Trailer Information</h5>
+              <div class="trailer-info">
+                <div class="trailer">
+                  <h3>20'</h3>
+                  <p>Weight: 10 tons</p>
+                  <p>Capacity: 35 tons</p>
+                </div>
+                <div class="trailer">
+                  <h3>40'</h3>
+                  <p>Weight: 15 tons</p>
+                  <p>Capacity: 45 tons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about us ends here-->
+    <!-- number of shipments delivered-->
+    <section class="project-work">
+      <div class="container text-center">
+        <p class="title">Shipments Processed</p>
+        <div class="stats d-flex justify-content-around align-items-center">
+          <div class="stat-item">
+            <h1 class="count">1340</h1>
+            <p>Road</p>
+          </div>
+          <div class="stat-item">
+            <h1 class="count">2245</h1>
+            <p>Air</p>
+          </div>
+          <div class="stat-item">
+            <h1 class="count">1100</h1>
+            <p>Marine</p>
+          </div>
+          <div class="stat-item">
+            <h1 class="count">1080</h1>
+            <p>Other</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- number of shipments delivered ends here-->
+
+    <!-- each photoshoot details (pricing -class, pricingdiv=id)-->
+    <section
+      class="photoshootDetials"
+      id="dvShootDetailsID"
+      style="display: none"
+    >
+      <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold text-white">OUR SERVICES</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="card text-center">
+            <div class="card-header">BASIC</div>
+            <div class="card-body">
+              <li><span class="money">5000rs</span></li>
+              <li>10 theme shoot</li>
+              <li>20 edited pics</li>
+              <li>50 raw</li>
+            </div>
+            <div class="card-footer"><a href="#">Book now</a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 card-on-top">
+          <div class="card text-center">
+            <div class="card-header">Maternity</div>
+            <div class="card-body">
+              <li><span class="money">15000rs</span></li>
+              <li>10 couple shoot</li>
+              <li>20 edited pics</li>
+              <li>50 raw</li>
+            </div>
+            <div class="card-footer"><a href="#">Book now</a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="card text-center">
+            <div class="card-header">Birthday</div>
+            <div class="card-body">
+              <li><span class="money">25000rs</span></li>
+              <li>Full Event coverage</li>
+              <li>200+ photos</li>
+              <li>100 edited photos</li>
+            </div>
+            <div class="card-footer"><a href="#">Book now</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- each photoshoot details end here-->
+
+    <!-- our partners feedbacks-->
+    <section class="happyclients" id="happyclients">
+      <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">OUR HAPPY CLIENTS</h1>
+        <p class="pt-1">
+          Customers trust and smile is the reason for to be moving
+        </p>
+      </div>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/Polyplex.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Polyplex corporation Ltd.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/AMPL.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Agarwal packers & Movers limited.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/AGTech.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Agtec industries private Ltd</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/Apace.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Apace transco pvt. Ltd.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/DP.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">DP world multimodal logistics Pvt Ltd</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/MPL.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Macroplast Pvt Ltd</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/Rapid.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Rapid multimodal logistics Ltd</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/SRM.png"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Sarvottam rolling mills pvt ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/ShreeSaija.png"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Shree shailja iron & steel pvt ltd</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/Srikaran.jpeg"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Srikaram prescience pvt ltd</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/Zoya.png"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Zoya Exim</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="Images/Cargo/DeepChandra.png"
+                      class="img-fluid img-thumnal"
+                  /></a>
+                  <p class="m-4">Deep Chand Arya industries</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- our partners ends-->
+    <!--- inquiry form-->
+    <section class="contactus" id="contactID">
+      <div class="container headings text-center">
+        <h3 class="text-center font-weight-bold">CONTACT US</h3>
+        <p class="pt-1">We're here to answer your questions!</p>
+        <div class="contact-details">
+          <div class="phone">
+            <h4>📞 Phone Numbers</h4>
+            <p>+1 234 567 890</p>
+            <p>+1 234 567 891</p>
+          </div>
+          <div class="address">
+            <h4>🏠 Address</h4>
+            <p>123 Street Name,<br />City, State, Zip Code,<br />Country</p>
+          </div>
+        </div>
+
+        <div class="iframe-container">
+          <iframe
+            id="googleForm"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeHmvVhnBmjDjJwpyZazyyIqmBcy23AqftB48fIWxuIpxKSAw/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--- inquiry form ends here-->
+
+    <!-- footer starts here-->
+    <footer class="footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4>Our Address</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 1234 Main Street, Suite 100,
+              City, State, 12345
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4>Follow Us</h4>
+            <p>
+              <i class="fas fa-globe"></i>
+              <a href="https://www.example.com" target="_blank"
+                >www.example.com</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/example" target="_blank"
+                >Facebook</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-twitter"></i>
+              <a href="https://www.twitter.com/example" target="_blank"
+                >Twitter</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="mt-3">© 2024 Tanishka Cargo. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+      //our services accordion
+      function toggleAccordion(element) {
+        const allAccordions = document.querySelectorAll(".ourServices");
+        allAccordions.forEach((acc) => {
+          if (acc !== element) {
+            acc.classList.remove("active");
+          }
+        });
+
+        element.classList.toggle("active");
+      }
+
+      //
+
+      $(document).ready(function () {
+        // Our Partners carousal starts
+        $(".carousel").carousel({
+          interval: 5000,
+        });
+
+        // Our Partners carousal ends
+
+        // **** START - shipmnet delivered numbers ****
+        const statItems = $(".count");
+        const projectWorkSection = $(".project-work");
+
+        // Function to trigger the pop effect
+        function triggerPop() {
+          statItems.each(function () {
+            $(this).removeClass("pop");
+            void $(this)[0].offsetWidth;
+            $(this).addClass("pop");
+            $(this).css("opacity", 1);
+          });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              triggerPop();
+            }
+          });
+        });
+
+        observer.observe(projectWorkSection[0]);
+
+        //**** END - shipment delivered numbers****
+
+        //**** resize iframe
+
+        //*** END resize iframe
+      });
+    </script>
+  </body>
+</html>
