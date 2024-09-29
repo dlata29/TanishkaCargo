@@ -29,6 +29,11 @@ p {
   font-weight: 400;
   color: #818181;
 }
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
 .extra-div h2,
 .dvServiceText h2 {
   font-size: 0.9rem;
