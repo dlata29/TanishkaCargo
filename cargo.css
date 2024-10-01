@@ -57,7 +57,7 @@ i {
   background-size: cover;
   background-position: center;
   background-size: 100% 100%;
-  clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+  /* clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0); */
   position: relative;
 }
 
@@ -165,15 +165,9 @@ i {
 
 @media (max-width: 768px) {
   .header {
-    height: 80vh; /* Reduce the height for smaller screens */
-    background-size: cover; /* Ensure it scales properly */
-    clip-path: polygon(
-      100% 0%,
-      100% 90%,
-      50% 100%,
-      0% 90%,
-      0 0
-    ); /* Adjust clipping for smaller screens */
+    height: 80vh;
+    background-size: cover;
+    clip-path: polygon(100% 0%, 100% 93%, 50% 100%, 0% 93%, 0 0);
   }
   .header-buttons a {
     padding: 10px 25px; /* Reduce padding */
